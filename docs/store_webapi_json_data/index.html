@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Store WebAPI JSON Data</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  	<div style="float: top;">
+		<div class="round" style="float: left; width: 90%;">
+			WebAPI URL: <br>
+			<input id="url" onchange="test()" class="round" placeholder="http://api.website.com/my/path/to/json" type="text">
+      		Save the action and look to the right of the action to find out if the url is valid and contains JSON.<br>    
+		</div>
+	</div>
+	<div><br><br><br><br><br> Token: <br>
+		<input id="token" class="round" style="width: 90%" placeholder="The Token or blank for none.." type="text"><br> --- OR ---
+	</div>
+	<div style="float: left; width: 50%">
+		Username: <br>
+		<input id="username" class="round" style="width: 90%" placeholder="Your username or blank for none.." type="text"><br><br>
+	</div>
+	<div style="float: right; width: 50%">
+		Password: <br>
+		<input id="password" class="round" style="width: 90%" placeholder="Your password or blank for none.." type="password"><br><br>
+	</div>
+	<div>
+		<div style="float: left; width: 30%;">
+			Store JSON Data In:<br>
+			<select id="storage" class="round">
+				${data.variables[1]}
+			  </select>
+		</div>
+		<div id="varNameContainer" style="float: right; width: 60%;">
+			Variable Name:<br>
+			<input id="varName" class="round" type="text"><br>
+		</div>
+	</div>
+  
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
